@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>objects functions</title>
+  <script>
+    var obj = {
+      sname: "dhruv",
+      lname: "morey",
+      age: "30",
+      courses: ["html", "css", "js", "jq"],
+      location: {
+        country: "india",
+        state: "maharashtra",
+        city: "pune"
+      }
+    };
+
+    document.write(obj + "<br><br>");
+    document.write(obj.sname + obj.lname + obj.age + "<br><br>");
+
+    document.write("<h2> array in object </h2>");
+    document.write(obj.courses + "<br>");
+    document.write(obj.courses[2] + "<br>");
+
+    document.write("<h2> object in object </h2>");
+    document.write(obj.location + "<br>");
+    document.write(obj.location.city + "<br>");
+
+    document.write("<h2> object in array </h2>");
+
+    var arr1 = [
+      { fruit: "mango", city: "devgad" },
+      { fruit: "orange", city: "nagpur" },
+      { fruit: "coconut", city: "kokan" },
+      { fruit: "grape", city: "nashik" }
+    ];
+
+    for (var i = 0; i < arr1.length; i++) {
+      document.write(arr1[i].fruit + "-" + arr1[i].city + "<br>");
+    }
+	
+
+      document.write(arr1 + "<br>");
+
+  </script>
+</head>
+<body>
+</body>
+</html>

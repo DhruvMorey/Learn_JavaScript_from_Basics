@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>DOM</title>
+ <style>
+  span{
+  background:sandybrown;
+  color:white;
+  }
+  b{
+	font-size:48px;
+	}
+ul, li a{
+font-size
+color : navy;
+text-decoration
+
+ul{
+background:khaki;
+}
+li:hover{
+		border: 2px dashed red;
+		padding : 5px;
+		}
+	h3{
+	color:beige;
+	background:#151f2e;
+	}
+button {
+		background-color:midnightblue;
+		color:khaki;
+		border-radius:5px;
+		float:right;
+		}
+</style>
+</head>
+<body>
+	<div id="main">
+	<div id = "head" class="hd" style="color:brown;" onclick="sd()">
+	
+	<b>TECHNOLEARN

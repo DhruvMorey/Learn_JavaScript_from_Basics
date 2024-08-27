@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>string functions</title>
+  <script>
+  
+    var s = "  Hi My NAME is dhruv Morey. is working as an AI/ML Freelancer    ";
+	
+    document.write("<h1>" + s + "</h1><br><br><hr>");
+		document.write("<hr color=red>");
+
+	
+	var c = s.length;
+	
+	document.write("<big><u> Length function :</u></big>" + s.length + "<br><br>");
+	document.write("<big><u> Length function with calc :</u></big>" + (-s.length - 2*c + 10000) + "<br><br>");
+	
+	
+		document.write("<hr>");
+
+	
+	s.trim;
+	document.write("<big><u> trim function :</u></big>"  + s +"<br><br>");
+	
+		document.write("<hr>");
+	
+	document.write("<big><u> lower case without round brackets:</u></big>" + s.toLowerCase + "<br><br>");
+		document.write("<big><u> lower case :</u></big>" + s.toLowerCase() + "<br><br>");
+
+		document.write("<hr>");
+
+
+	document.write("<big><u> Upper case :</u></big>" + s.toUpperCase() + "<br><br>");
+	
+
+		document.write("<hr>");
+
+
+	document.write("<big><u> include function :</u></big>" + s.includes("  ") + "<br><br>");
+	document.write("<big><u> include function with wrong number of spaces:</u></big>" + s.includes("  as") + "<br><br>");
+	
+		document.write("<hr>");
+	
+
+	document.write("<big><u> startsWith function with spaces:</u></big>" + s.startsWith("  Hi") + "<br><br>");
+	document.write("<big><u> startsWith function without spaces:</u></big>" + s.startsWith("Hi") + "<br><br>");
+	document.write("<big><u> startsWith function with wrong case:</u></big>" + s.startsWith("Hi") + "<br><br>");
+	
+	
+		document.write("<hr>");
+
+	
+	document.write("<big><u> endsWith function with spaces:</u></big>" + s.endsWith("er    ") + "<br><br>");
+	
+		document.write("<hr>");
+
+	
+	document.write("<big><u> search function:</u></big>" + s.search("dhruv") + "<br><br>");
+	document.write("<big><u> search function with space:</u></big>" + s.search(" dhruv") + "<br><br>");
+	document.write("<big><u> search function with repeating word :</u></big>" + s.search("is") + "<br><br>"); //noticed it only noticed the 1st occurance
+
+
+		document.write("<hr>");
+
+
+	var a = s.match("is dhruv Morey. is ");
+	document.write("<big><u> match function with true input:</u></big>" + a + "<br><br>");
+	
+	var  b= s.match("asdfgsdfs");
+	document.write("<big><u> match function with false input:</u></big>" + b + "<br><br>");
+
+
+		document.write("<hr>");
+	
+	
+	document.write("<big><u> Index function of word:</u></big>" + s.indexOf("dhruv") + "<br><br>");
+	document.write("<big><u> index function of single character :</u></big>" + s.indexOf("i") + "<br><br>");
+	
+
+		document.write("<hr>");
+
+	
+	document.write("<big><u> last index of function:</u></big>" + s.lastIndexOf("dhruv") + "<br><br>");
+	document.write("<big><u> last index of function:</u></big>" + s.lastIndexOf(" ") + "<br><br>");
+	
+	    	document.write("<hr>");
+
+	
+	document.write("<big><u> replace function:</u></big>" + s.replace("is","asjdnjna") + "<br><br>"); //noticed it replaced only the 1st word
+	
+    	document.write("<hr>");
+	
+	document.write("<big><u>charAt function:</u></big>" +s.charAt(7) + "<br><br>");
+
+		document.write("<hr>");
+	
+	document.write("<big><u>charCodeAt function:</u></big>" +s.charCodeAt(1) + "<br><br>");
+	
+		document.write("<hr>");
+
+	
+	var s1 = "hello";
+	var s2 = "world"
+	
+	document.write("<big><u>concat function:</u></big>" +s1.concat(s2) + "<br><br>");
+	
+		document.write("<hr>");
+
+	document.write("<big><u>split function with no upper limit :</u></big>" +s.split("i") + "<br><br>"); 
+	document.write("<big><u>split function with upper limit of 6 blank spaces:</u></big>" +s.split(" ",6) + "<br><br>"); 
+	document.write("<big><u>split function with upper limit of 7 blank spaces:</u></big>" +s.split(" ",7) + "<br><br>"); 
+
+
+		document.write("<hr>");
+		
+	document.write("<big><u>repeat function:</u></big>" +s.repeat(4) + "<br><br>"); 
+		
+		document.write("<hr>");
+		
+	document.write("<big><u>slice function:</u></big>" +s.slice(9,33) + "<br><br>");
+		document.write("<big><u>slice function with no upper limit:</u></big>" +s.slice(33) + "<br><br>");
+
+	
+		document.write("<hr>");
+		
+	document.write("<big><u>substr function:</u></big>" +s.substr(9,33) + "<br><br>");
+	document.write("<big><u>substr function with no upper limit:</u></big>" +s.substr(33) + "<br><br>");
+
+		document.write("<hr>");
+	
+	var str3 = 123455; //fail 
+	str3.toString();
+	document.write("<big><u>toString function withour saving in variable:</u></big>" + typeof str3 + "<br><br>");
+	document.write("<big><u>toString function direct:</u></big>" + typeof str3.toString() + "<br><br>");
+	var zz = str3.toString();
+	document.write("<big><u>toString function by saving in variable:</u></big>" + typeof str3 + "<br><br>");
+
+	
+	
+		document.write("<hr>");
+	document.write("<big><u>valueOf function:</u></big>" + s.valueOf(6)	 + "<br><br>"); //FAIL
+	
+	
+	document.write("<hr>");
+
+			document.write("trim function");
+
+	
+	var str4 = "       sadbahsbdasjdh        ";
+	var t = s.trim();
+	console.log(t);
+
+
+  </script>
+</head>
+</html>

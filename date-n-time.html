@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>date & time functions</title>
+ <script>
+  
+    var dt = new Date();
+    document.write(dt + "<br>");
+
+    document.write("<h2> Date Method : </h2>");
+    var now = new Date();
+
+    document.write("<mark> Date string Method : </mark>" + now.toDateString() + "<br>");
+    document.write("<mark> current Date : </mark>" + now.getDate() + "<br>");
+
+    document.write("<mark> current month : </mark>" + now.getMonth() + "<br>");
+    document.write("<mark> current Year : </mark>" + now.getFullYear() + "<br>");
+
+    document.write("<h2> Time Method : </h2>");
+
+    document.write("<mark> current Hours : </mark>" + now.getHours() + "<br>");
+
+    document.write("<mark> current Minutes : </mark>" + now.getMinutes() + "<br>");
+    document.write("<mark> current Seconds : </mark>" + now.getSeconds() + "<br>");
+    document.write("<mark> current Milliseconds : </mark>" + now.getMilliseconds() + "<br>");
+
+ </script>
+</head>
+</html>

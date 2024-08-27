@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>array methods</title>
+
+<script>
+
+var arr=["cherry", "blueberry", "raspberry","strawberry", "apple"];
+var arr4=["5", "3", "1","4", "2"];
+var arr5=[5, 3, 1,4, 2];
+var arr6=["5", 2, 4,"3", "1"];
+var arr7=["abc", "1", 3,"ysa", "asdb"];
+
+document.write("<i>" + arr + "</i><br><br>");
+document.write("<i>" + arr4 + "</i><br><br>");
+document.write("<i>" + arr5 + "</i><br><br>");
+document.write("<i>" + arr6 + "</i><br><br>");
+document.write("<i>" + arr7 + "</i><br><br>");
+
+arr.sort();
+
+document.write("<mark> sort method</mark>:" + arr +"<br> <br>");
+
+arr.reverse ();
+
+document.write("<mark> reverse method</mark>:" + arr + "<br><br>");
+
+
+var arr2 = arr.pop();
+
+document.write("<mark>pop method</mark>:" + arr2 +"<br><br>");
+document.write("<mark>pop method</mark>:" + arr +"<br><br>");
+
+arr.push("mango");
+var arr3 = arr;
+
+document.write("<mark> push method</mark>:" + arr +"<br><br>");
+document.write("<mark> push method</mark>:" + arr3 +"<br><br>");
+
+
+
+arr.shift();
+document.write("<mark> shift method</mark>:" + arr +"<br><br>" ); 
+
+
+arr.unshift("pear");
+document.write("<mark> unshift method</mark>:" + arr + "<br><br>");
+
+var b = ["a", "b", "c"];
+var c = ["d", "e", "f"];
+var d = c.concat(b);
+document.write("<mark> concat</mark>:" + d + "<br><br>");
+
+//join
+document.write("<mark> d right now is</mark>:" + d + "<br><br>");
+var z = d.join("*");
+document.write("<mark> join method </mark>:" + z + "<br><br>");
+
+
+
+
+//slice
+var e = arr.slice(1,4)
+document.write("<mark> slice</mark>:" + e + "<br><br>");
+
+
+//splice
+
+document.write("<mark> arr:" + arr + "<br><br>");
+
+var f1 = arr.splice(0,2,"asdas","asdasd")
+document.write("<mark> splice</mark>:" + f1 + "<br><br>");
+
+var f2 = arr.splice(2,3,"asdas")
+document.write("<mark> splice</mark>:" + f2 + "<br><br>");
+
+
+document.write("<b> to print array elements individullay </b>:" + f2 + "<br><br>");
+
+
+
+</script>
+</head>
+</html>

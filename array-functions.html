@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>array functions</title>
+<style>
+</style>
+</head>
+<body>
+
+<script>
+document.write("<b> to print array elements individually </b>: <br><br>");
+
+var arr1 = [15, 14, "tdsff", "hello", "world", 123.14];
+
+document.write("arr:" + arr1 + "<br><br>");
+
+for (var i = 0; i < 6; i++) {
+   document.write(arr1[i] + "<br>");
+}
+
+document.write("<hr>");
+
+document.write("<b> to print array elements in a list </b>: <br><br>");
+
+document.write("<ol type='a'>");
+for (var i = 0; i < 6; i++) {
+   document.write("<li>" + arr1[i] + "</li>");
+}
+document.write("</ol>")
+
+document.write("<hr>");
+
+document.write("<b> to print sum of array elements </b>: <br><br>");
+
+var arr2 = [12, 123, 324, 65, 23, 453, 12, 654, 123, 7, 21, 3];
+
+var sum = 0;
+
+document.write("<ul type='square'>");
+for (var i = 0; i < arr2.length; i++)  //.lenght operator used
+{
+   document.write("<li>" + arr2[i] + "</li>");
+   sum = sum + arr2[i];
+}
+document.write("</ul>");
+document.write("<p>The sum of the given array is: " + sum + "</p>");
+
+document.write("<hr>");
+document.write("<p>table of 124:</p>");
+	var prod = 1;
+	
+
+</script>
+
+</body>
+</html>

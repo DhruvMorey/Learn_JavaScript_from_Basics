@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Function </title>
+</head>
+<body>
+    <h1> javaScript fucntion </h1>
+	<p> javaScript function are used to perform a particular task, n-number of time.</p>
+	<p> to use a function you need to call a function </p>
+	<p> there are 2 type of function </p>
+	<ol> 
+	   <li> built in function </li>
+	   <li>user-defined function</li>
+	</ol>
+	
+	<h3> User-Defined Fuction</h3>
+	
+	<h4>Function Without Parameters<h4>
+<script>
+document.write("<hr> <hr><hr>");
+
+
+       document.write("<hr> This is A Random Statment");
+	   document.write("<hr> This is A Random Statment" + "<br>");
+	   fun();
+	   document.write("<hr> This is A Random Statement" +"<br>");
+	   
+	   function fun(){
+	      document.write("<big> Hello ! This is Function without Parameters. </big>"+ "<br>"); 
+		  }
+		  
+		fun();
+		document.write("<hr> This is A Random Statment");
+		document.write("<hr> This is A Random Statment");
+		document.write("<hr> This is A Random Statment");
+		document.write("<hr> This is A Random Statment" + "<br>");
+		
+	   fun();
+	   
+	   document.write("<hr> <hr><hr>");
+
+       document.write("<h4> Function With Parameters</h4>");
+     
+       function wp(x,y,z){
+         document.write(x + y + z + "<br>");
+        }
+  
+       wp("Good", "Afternoon","Everyone!");
+       wp("526","897","554");
+	   wp(526,897,554);
+	   //wp(c,d,b); didn't work
+	   
+       
+        document.write("<hr><h3> Function scope</h3>");
+
+		var global="Global scope";
+		document.write("<i>"+ global+"</i><br><br>");
+		
+		function scope(){
+		    var local="Local scope";
+			document.write(local+"<br>");
+			document.write("<i>" + global +"<i><br><br>");
+			}
+			 scope();
+	</script>
+  </body>
+</html>

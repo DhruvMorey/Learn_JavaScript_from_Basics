@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Input Example</title>
+</head>
+<body>
+  <label for="nameInput">Name:</label>
+  <input type="text" id="nameInput"><br>
+
+  <label for="ageInput">Age:</label>
+  <input type="number" id="ageInput"><br>
+
+  <button onclick="processInput()">Submit</button>
+
+  <script>
+  function processInput() {
+  // Get the value of the name input and store it in a variable
+  var userName = document.getElementById("nameInput").value;
+
+  // Get the value of the age input and store it in a variable
+  var userAge = document.getElementById("ageInput").value;
+
+  // Display a greeting with the user's name and age
+  alert("Hello, " + userName + "! You are " + userAge + " years old.");
+}
+
+  </script>
+</body>
+</html>

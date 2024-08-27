@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>number functions</title>
+<style>
+</style>
+</head>
+<body>
+
+<script>
+
+var sdnum = "1231242135324.342147";
+var sndnum = "21314";
+var alphanumeric = "23534.62sa";
+var snum = 12.44;
+var bnum = 32.2352462314123;
+var intnum = 79012;
+
+
+document.write("<b> string decimal number = </b>:"+ sdnum + "<br>typeof :" +typeof sdnum +"<br><br>");
+document.write("<b> string non decimal number = </b>:"+ sndnum + "<br>typeof :" +typeof sndnum +"<br><br>");
+document.write("<b> string alpha number = </b>:"+ alphanumeric+ "<br>typeof :" +typeof alphanumeric +"<br><br>");
+document.write("<b> small number = </b>:"+ snum +"<br><br>");
+document.write("<b> big number = </b>:"+ bnum +"<br><br>");
+document.write("<b> integer number = </b>:"+ intnum +"<br><br>");
+
+document.write("<hr><hr>");
+
+
+var num2 = Number(sdnum);
+document.write ("<mark> Number function called directly </mark>:" +Number(sdnum) + "<br><br>" );
+document.write ("<mark> Number function called by storing in a variable </mark>:" + num2 + "<br>typeof :" +typeof num2 +"<br><br>" );
+var num3 = Number(alphanumeric);
+document.write ("<mark> Number function on alphanumeric variable : </mark>:" + num3 + "<br>typeof :" +typeof num3 +"<br><br>" );
+
+document.write("<hr>");
+
+
+
+document.write ("<mark> parseInt function called on big num</mark>:" + parseInt(bnum) + "<br>typeof :" +typeof parseInt(bnum) +"<br><br>" );
+
+document.write ("<mark> parseInt function called on integer num</mark>:" + parseInt(intnum) + "<br>typeof :" +typeof parseInt(intnum) +"<br><br>" );
+
+document.write ("<mark> parseInt function called on string decimal num</mark>:" + parseInt(sdnum) + "<br>typeof :" +typeof parseInt(sdnum) +"<br><br>" );
+document.write ("<mark> parseInt function called on string non decimal num</mark>:" + parseInt(sndnum) + "<br>typeof :" +typeof parseInt(sndnum) +"<br><br>" );
+document.write ("<mark> parseInt function called on string alphanumeric</mark>:" + parseInt(alphanumeric) + "<br>typeof :" +typeof parseInt(alphanumeric) +"<br><br>" );
+
+
+document.write("<hr>");
+
+document.write ("<mark> parseFloat function called on big num</mark>:" + parseFloat(bnum) + "<br>typeof :" +typeof parseInt(bnum) +"<br><br>" );
+document.write ("<mark> parseFloat function called on integer num</mark>:" + parseFloat(intnum) + "<br>typeof :" +typeof parseInt(intnum) +"<br><br>" );
+
+document.write ("<mark> parseFloat function called on string decimal num</mark>:" + parseFloat(sdnum) + "<br>typeof :" +typeof parseInt(sdnum) +"<br><br>" );
+
+document.write ("<mark> parseFloat function called on string non decimal num</mark>:" + parseFloat(sndnum) + "<br>typeof :" +typeof parseInt(sndnum) +"<br><br>" );
+
+document.write ("<mark> parseFloat function called on string alphanumeric</mark>:" + parseFloat(alphanumeric) + "<br>typeof :" +typeof parseInt(alphanumeric) +"<br><br>" );
+
+
+
+document.write("<hr>");
+
+document.write("<mark>isFinite on big num:</mark>" + isFinite(bnum) + "<br><br>");
+document.write("<mark>isFinite on string decimal number:</mark>" + isFinite(sdnum) + "<br><br>");
+document.write ("<mark>isFinite on alphanumeric:</mark>" + isFinite(alphanumeric) + "<br><br>")
+document.write ("<mark>isFinite on pie:</mark>" + isFinite(22/7) + "<br><br>"); // check again 
+
+
+
+document.write("<hr>");
+
+var chk = Number.isInteger(bnum);
+document.write("<mark>isInteger on big num:</mark>" + chk + "<br><br>");
+document.write("<mark>isInteger on string decimal number:</mark>" + Number.isInteger(sdnum) + "<br><br>");
+document.write("<mark>isInteger on string non decimal number:</mark>" + Number.isInteger(sndnum) + "<br><br>");
+document.write ("<mark>isFinite on alphanumeric:</mark>" + Number.isInteger(alphanumeric) + "<br><br>")
+document.write("<mark>isInteger on integer number:</mark>" + Number.isInteger(intnum) + "<br><br>");
+
+
+
+document.write("<hr>");
+//toFixed rounds only deciaml digits
+document.write("<mark>toFixed on big num:</mark>" + bnum.toFixed(5) + "<br><br>");
+document.write("<mark>toFixed on small num:</mark>" + snum.toFixed(5) + "<br><br>");
+//document.write("<mark>toFixed on string decimal number:</mark>" + sdnum.toFixed(5) + "<br><br>");
+//document.write("<mark>toFixed on string non decimal number:</mark>" + sndnum.toFixed(5) + "<br><br>");
+//document.write ("<mark>toFixed on alphanumeric:</mark>" + alphanumeric.toFixed(5) + "<br><br>")
+document.write("<mark>toFixed on integer number:</mark>" + intnum.toFixed(3) + "<br><br>");
+document.write("didn't work on string values");
+
+document.write("<hr>");
+
+//toPrecision rounds to places including the whole number 
+
+document.write("<mark>toPrecision on big num:</mark>" + bnum.toPrecision(5) + "<br><br>");
+document.write("<mark>toPrecision on small num:</mark>" + snum.toPrecision(5) + "<br><br>");
+//document.write("<mark>toPrecision on string decimal number:</mark>" + sdnum.toPrecision(5) + "<br><br>");
+//document.write("<mark>toPrecision on string non decimal number:</mark>" + sndnum.toPrecision(5) + "<br><br>");
+//document.write ("<mark>toPrecision on alphanumeric:</mark>" + alphanumeric.toPrecision(5) + "<br><br>")
+document.write("<mark>toPrecision on integer number:</mark>" + intnum.toPrecision(3) + "<br><br>");
+
+document.write("didn't work on string values");
+
+
+document.write("<hr>");
+
+
+</script>
+
+</body>
+</html>
